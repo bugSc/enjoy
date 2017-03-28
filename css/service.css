@@ -1,0 +1,53 @@
+
+.service_wrap{
+    width: 100%;
+    margin-top: 2%;
+}
+#service_zone{
+    width: 75%;
+    margin: 0 auto;
+}
+/* <!-- 标题 --> */
+#service_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    word-spacing: 2em;
+}
+/* <!-- 菜单 --> */
+#service_content{
+    width: 100%;
+    margin: 12% auto;
+}
+#service_content li{
+    width: 20%;
+    text-align: center;
+    margin-left: 4%;
+    text-align: center;
+    float: left;
+}
+#service_content li img{
+    width: 100%;
+}
+#service_content li span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#service_content li p{
+    font-size: 1em;
+    color: #808080;
+}
+/* <!-- 内容底部图片 --> */
+.service_base{
+    width: 100%;
+}
+.service_base img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1532px){
+    #service_zone{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

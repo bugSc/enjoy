@@ -1,0 +1,368 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-02 17:17:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-11 15:54:04
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    min-width: 640px;
+}
+ul{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* <!-- 页面头 -->*/
+.nav_wrap{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+/* <!-- 大图切换 --> */
+#biger_cut{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    margin: auto;
+}
+#biger_cut li{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* <!-- 页面顶行导航菜单 --> */
+.nav_menu{
+    width: 75%;
+    margin-left: 12.5%;
+}
+#logo{
+    float: left;
+}
+/* <!-- 跳转菜单 --> */
+#jump_menu{
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+#jump_menu li{
+    float: left;
+    margin-left: 20px;
+}
+#jump_menu li a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+#jump_menu li a:hover{
+    border-bottom: 3px solid #CFDB00;
+}
+/* 副切换菜单 */
+.nav_menu div:nth-of-type(2){
+    width: 100px;
+    display: none;
+    text-align: center;
+    float: right;
+}
+#jumpmenu li{
+    opacity: 0.8;
+    background-color: #CDDB00;
+}
+#jumpmenu li a{
+    color: white;
+    text-decoration: none;
+}
+#jumpmenu{
+    position: absolute;
+    display: none;
+}
+.underline{
+    border-bottom: 3px solid #CDDB00;
+}
+/* 配合事件 */
+@media screen and (max-width: 1523px){
+    #jump_menu{
+        display: none;
+    }
+    #jumpa{
+        display: block;
+    }
+    #logo img{
+        float: left;
+    }
+    .nav_menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_wrap{
+        width: 100%;
+    }
+}
+/*....................... content................... */
+.Switch_wrap{
+    width: 75%;
+    margin: 2% auto;
+}
+.switchTopic{
+    width: 100%;
+    margin: 1% auto;
+}
+.switchTopic ul>li{
+    float: left;
+    font-size: 1rem;
+    opacity: 0.6;
+    margin-right: 5%;
+    line-height: 30px;
+}
+.bottom{
+    border-bottom: 3px solid #000000;
+}
+.switchTopic ul>li:hover{
+    border-bottom: 3px solid #000000;
+}
+/* 房产三维互动 */
+.house{
+    width: 100%;
+    margin-top: 1%;
+    position: relative;
+}
+.houseLeft{
+    width: 80%;
+    position: relative;
+    float: left;
+}
+/* 图片切换 */
+.cutLeft{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    cursor: pointer;
+}
+.cutLeft div>.cutimgLeft{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    display: none;
+    z-index: 10;
+}
+/* hover */
+.cutLeft:hover .cutimgLeft{
+    display: block;
+}
+.cutRight{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    cursor: pointer;
+}
+.cutRight div>.cutimgRight{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    display: none;
+    z-index: 10;
+}
+/* hover */
+.cutRight:hover .cutimgRight{
+    display: block;
+}
+/* 左边大图 */
+.houseLeft img{
+    width: 100%;
+    vertical-align: top;
+}
+.houseLeft p{
+    opacity: 0.6;
+    margin-top: 1%;
+}
+.houseLeft>ul:not(:nth-of-type(1)){
+    display: none;
+}
+.houseLeft ul li:not(:nth-of-type(1)){
+    display: none;
+}
+/* 右边小图 */
+.houseRight>ul{
+    width: 16.975%;
+    float: right;
+    text-align: center;
+}
+.houseRight>ul>li>div{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: rgb(255,255,255);
+    position: absolute;
+    top: 30%;
+}
+
+.houseRight ul li{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.houseRight ul li img{
+    width: 100%;
+    vertical-align: top;
+}
+.houseRight ul li:not(:nth-of-type(1)){
+    margin-top: 1.9%;
+}
+
+/* .........<!-- 工业/家居三维互动 -->.............. */
+.industry{
+    width: 100%;
+    margin: 1% auto;
+    display: none;
+}
+.industryLeft{
+    width: 80%;
+    float: left;
+}
+.industryLeft ul>li>img{
+    width: 100%;
+    vertical-align: top;
+}
+.industryLeft ul>li:not(:nth-of-type(1)){
+    display: none;
+}
+.industryRight{
+    /* position: relative; */
+}
+.industryRight>ul{
+    width: 16.975%;
+    float: right;
+    overflow: hidden;
+}
+.industryRight ul li{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.industryRight ul li img{
+    width: 100%;
+    vertical-align: top;
+}
+.industryRight ul li:not(:nth-of-type(1)){
+    margin-top: 1.9%;
+}
+.none~li{
+    display: none;
+}
+/* 家居 */
+#up{
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    cursor: pointer;
+    display: none;
+}
+#down{
+    width: 32px;
+    height: 60px;
+    position: absolute;
+    left: 80%;
+    top: 85%;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:1006px){
+    #up{
+    top: 13%;
+    }
+    #down{
+        top: 55%;
+    }
+}
+/* .................业务内容............... */
+.operation{
+    width: 75%;
+    margin: 0 auto;
+}
+/* 业务介绍 */
+.current{
+    width: 100%;
+    margin: 5% auto;
+}
+.current strong{
+    font-size: 30px;
+}
+.current ul{
+    margin-top: 20%;
+}
+.current ul>li{
+    width: 32.1%;
+    margin-right: 1.2%;
+    text-align: left;
+    float: left;
+}
+.current ul>li img{
+    width: 100%;
+    vertical-align: top;
+}
+.current ul>li p{
+    width: 80%;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+/* 业务优势 */
+.advantages{
+    width: 100%;
+    margin: 5% auto;
+}
+.advantages strong{
+    font-size: 30px;
+}
+.advantages ul{
+    margin-top: 20%;
+}
+.advantages ul>li{
+    width: 23%;
+    margin-right: 1.2%;
+    text-align: left;
+    float: left;
+}
+.advantages ul>li img{
+    width: 100%;
+    vertical-align: top;
+}
+.advantages ul>li p{
+    width: 80%;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+
+
+

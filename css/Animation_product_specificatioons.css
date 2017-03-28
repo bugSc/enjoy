@@ -1,0 +1,237 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-02 17:17:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-07 21:41:35
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    min-width: 640px;
+}
+ul{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* <!-- 页面头 -->*/
+.nav_wrap{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+/* <!-- 大图切换 --> */
+#biger_cut{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    margin: auto;
+}
+#biger_cut li{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* <!-- 页面顶行导航菜单 --> */
+.nav_menu{
+    width: 75%;
+    margin-left: 12.5%;
+}
+#logo{
+    float: left;
+}
+/* <!-- 跳转菜单 --> */
+#jump_menu{
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+#jump_menu li{
+    float: left;
+    margin-left: 20px;
+}
+#jump_menu li a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+#jump_menu li a:hover{
+    border-bottom: 3px solid #CFDB00;
+}
+/* 副切换菜单 */
+.nav_menu div:nth-of-type(2){
+    width: 100px;
+    display: none;
+    text-align: center;
+    float: right;
+}
+#jumpmenu li{
+    opacity: 0.8;
+    background-color: #CDDB00;
+}
+#jumpmenu li a{
+    color: white;
+    text-decoration: none;
+}
+#jumpmenu{
+    position: absolute;
+    display: none;
+}
+.underline{
+    border-bottom: 3px solid #CDDB00;
+}
+/* 配合事件 */
+@media screen and (max-width: 1523px){
+    #jump_menu{
+        display: none;
+    }
+    #jumpa{
+        display: block;
+    }
+    #logo img{
+        float: left;
+    }
+    .nav_menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_wrap{
+        width: 100%;
+    }
+}
+
+/* .......................content..................... */
+/* 业务介绍 */
+.business{
+    width: 75%;
+    margin-left: 12.5%;
+    position: relative;
+}
+#back img{
+    width: 100%;
+}
+/* 切换 */
+.switch ul li{
+    float: left;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+.switch ul li span{
+    opacity: 0.6;
+}
+.switch ul li:hover span{
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+.border{
+    border-bottom: 2px solid black;
+}
+.content_wrap{
+    width: 100%;
+}
+.content_wrap span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.content_wrap p{
+    text-indent: 2em;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.introduction{
+    position: relative;
+    margin-top: 20px;
+}
+.introduction img{
+    width: 100%;
+}
+.control{
+    width: 26px;
+    height: 38px;
+    background: url('../image/images1/video_btn.png') no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}
+.gai{
+    opacity: 0.7;
+    width: 39%;
+    float: left;
+}
+.gai li{
+    text-indent: 2em;
+    background: url('../image/images1/pro_bg01.jpg')left no-repeat;
+}
+.li_con{
+    opacity: 0.7;
+    width: 58%;
+    float: right;
+}
+.case{
+    width: 102.7%;
+    margin-top: 10%;
+}
+.case ul li{
+    width: 32%;
+    float: left;
+    margin-right: 0.687%;
+    margin-top: 1%;
+}
+.case ul li img{
+    width: 100%;
+}
+@media screen and (max-width: 1540px){
+    .business{
+        width: 100%;
+        margin-left: 0;
+    }
+    .gai{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .gai{
+        width: 46%;
+    }
+    .li_con{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .gai{
+        width: 55%;
+    }
+    .li_con{
+        width: 44%;
+    }
+}
+@media screen and (max-width: 900px){
+    .gai{
+        width: 64%;
+    }
+    .li_con{
+        width: 36%;
+    }
+}

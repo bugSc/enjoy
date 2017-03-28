@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+}
+.wrap{
+    min-width: 640px;
+}
+ul{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* <!-- 页面头 -->*/
+.nav_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-perspective: 1000;
+    -webkit-transform-style:preserve-3d;
+}
+/* <!-- 背景大图片 -->*/
+#back_img a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#back{
+    width: 100%;
+    height: 100%;
+}
+#back_img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+#back a:not(:nth-child(1)){
+    display: none;
+}
+/* <!-- logo文字 --> */
+#logo_tital{
+    width: 75%;
+    position: absolute;
+    left: 12.5%;
+    top: 30%;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 3em;
+    color: #094D79;
+    opacity: 0;
+    letter-spacing: 0.5em;
+    animation: logo 1s ease 0.5s forwards;
+    transform: translate3d(110px,0,250px);
+}
+@keyframes logo {
+    from{
+        opacity: 0;
+        transform: translate3d(110px,0,250px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+/* <!-- 大图切换 --> */
+#biger_cut{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    margin: auto;
+}
+#biger_cut li{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* <!-- 页面定行导航菜单 --> */
+.nav_menu{
+    width: 75%;
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+}
+#logo{
+    float: left;
+}
+/* <!-- 跳转菜单 --> */
+#jump_menu{
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+#jump_menu li{
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
+#jump_menu li a{
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+#jump_menu li a:hover{
+    border-bottom: 3px solid #CFDB00;
+}
+/* <!-- 置底按钮 --> */
+#to_bottom{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+}
+/* 副切换菜单 */
+.nav_menu div:nth-of-type(2){
+    width: 100px;
+    display: none;
+    text-align: center;
+    float: right;
+}
+#jumpmenu li{
+    opacity: 0.8;
+    background-color: #CDDB00;
+}
+#jumpmenu li a{
+    color: white;
+    text-decoration: none;
+}
+#jumpmenu{
+    display: none;
+}
+.underline{
+
+    border-bottom: 3px solid #CDDB00;
+}
+/* 配合事件 */
+@media screen and (max-width: 1520px){
+    #jump_menu{
+        display: none;
+    }
+    #jumpa{
+        display: block;
+    }
+    .nav_menu{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #logo img{
+        float: left;
+    }
+    .nav_menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_wrap{
+        width: 100%;
+    }
+}

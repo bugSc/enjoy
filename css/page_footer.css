@@ -1,0 +1,93 @@
+/* .......................页脚........................ */
+.footer_wrap{
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+#back_ground{
+    width: 100%;
+    background-color: #838483;
+}
+/* 信息 */
+#information {
+    width: 75%;
+    margin: 0 auto;
+}
+#information dl{
+    float: left;
+    margin-right: 10%;
+}
+#information dt{
+    line-height: 500%;
+    margin-left: -2%;
+}
+#information dd{
+    line-height: 200%;
+    margin-left: -2%;
+}
+#information dl a{
+    font-family: Arial;
+    text-decoration: none;
+    color: white;
+}
+/* 电话联系方式 */
+#number{
+    width: 200px;
+    height: 100px;
+    float: right;
+    color: white;
+    margin-top: -10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+#number span{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    line-height: 100%;
+}
+#number p{
+    font-size: 12px;
+}
+/* 版权 */
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #272822;
+}
+.copyright span{
+    color: white;
+    font-size: 12px;
+    line-height: 50px;
+}
+#english{
+    position: absolute;
+    left: 80%;
+    top: 88%;
+}
+#english a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+}
+/* 媒体响应 */
+@media screen and (max-width: 1238px){
+    #information{
+        width: 100%;
+    }
+    #information dl{
+        float: left;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    #number{
+        margin-top: -20%;
+        margin-right: -2%;
+    }
+}
+@media screen and (max-width: 950px){
+    #number{
+        margin-top: -30%;
+        margin-right: -6%;
+    }
+}

@@ -1,0 +1,188 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-02 17:17:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-07 21:41:47
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    min-width: 640px;
+}
+ul{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* <!-- 页面头 -->*/
+.nav_wrap{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+/* <!-- 大图切换 --> */
+#biger_cut{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    margin: auto;
+}
+#biger_cut li{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* <!-- 页面顶行导航菜单 --> */
+.nav_menu{
+    width: 75%;
+    margin-left: 12.5%;
+}
+#logo{
+    float: left;
+}
+/* <!-- 跳转菜单 --> */
+#jump_menu{
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+#jump_menu li{
+    float: left;
+    margin-left: 20px;
+}
+#jump_menu li a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+#jump_menu li a:hover{
+    border-bottom: 3px solid #CFDB00;
+}
+/* 副切换菜单 */
+.nav_menu div:nth-of-type(2){
+    width: 100px;
+    display: none;
+    text-align: center;
+    float: right;
+}
+#jumpmenu li{
+    opacity: 0.8;
+    background-color: #CDDB00;
+}
+#jumpmenu li a{
+    color: white;
+    text-decoration: none;
+}
+#jumpmenu{
+    position: absolute;
+    display: none;
+}
+.underline{
+    border-bottom: 3px solid #CDDB00;
+}
+/* 配合事件 */
+@media screen and (max-width: 1523px){
+    #jump_menu{
+        display: none;
+    }
+    #jumpa{
+        display: block;
+    }
+    #logo img{
+        float: left;
+    }
+    .nav_menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_wrap{
+        width: 100%;
+    }
+}
+
+/* .......................content..................... */
+/* 大图 */
+.contact_wrap{
+    width: 100%;
+}
+.contact_map img{
+    width: 100%;
+}
+/* 地址总称 */
+.company_address{
+    width: 75%;
+    margin: 2% auto;
+
+}
+.address_list{
+    width: 100%;
+    border-left: 8px solid rgb(250, 0, 0);
+    padding-left: 1%;
+}
+.company_address strong{
+    font-family: "微软雅黑";
+    font-size: 30px;
+    font-weight: lighter;
+}
+.company_address p{
+    opacity: 0.5;
+}
+/* 公司地址明细 */
+.address_detail ul{
+    width: 75%;
+}
+.address_detail ul li{
+    width: 100%;
+    float: left;
+    margin-top: 5%;
+}
+.company_name{
+    width: 130px;
+    height: 60px;
+    line-height: 65px;
+    border-right: 2px solid rgb(250, 0, 0);
+    float: left;
+    font-family: "微软雅黑";
+    color: rgb(250, 0, 0);
+    font-size: 20px;
+}
+.relevant{
+    float: left;
+    line-height: 30px;
+    margin-left: 2%;
+}
+.landmarks{
+    float: left;
+    margin-left: 10%;
+}
+@media screen and (max-width: 1320px){
+    .company_address{
+    width: 100%;
+    margin: 2% 12.5%;
+
+    }
+    .address_detail ul{
+        width: 100%;
+    }
+}

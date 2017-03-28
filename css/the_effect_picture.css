@@ -1,0 +1,113 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-04 11:37:27
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-14 21:41:43
+*/
+/* <!-- ...................菜单切换..................... --> */
+.menuSwitch{
+    width: 75%;
+    margin: 0 auto;
+}
+.menuSwitch ul{
+    font-family: "微软雅黑";
+    width: 100%;
+}
+.menuSwitch ul li{
+    float: left;
+    margin: 2% 2%;
+}
+.menuSwitch ul li span{
+    opacity: 0.6;
+}
+.effect{
+    border-bottom: 2px solid black;
+}
+.menuSwitch>ul>li:hover span{
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+.picture_wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.picture_wrap ul{
+    width: 100%;
+    position: relative;
+}
+.picture_wrap ul li{
+    width: 33%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.picture_wrap ul li img{
+    width: 98%;
+    vertical-align: top;
+}
+.picture_wrap ul li div{
+    width: 98%;
+    height: 99.5%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.picture_wrap ul li div img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+.picture_wrap>ul>li:hover div{
+    display: block;
+}
+.picture_wrap ul:not(:nth-of-type(1)){
+    display: none;
+}
+/* 查看图片 */
+.flow{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.flow div{
+    padding: 0.5%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+}
+.flow div>img:first-child{
+    display: block;
+}
+.flow div>span{
+    display:block;
+    padding: 1%;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.flow div>img:nth-of-type(2){
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    left: 95%;
+}
+.flow div>img:nth-of-type(3){
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    top: 35%;
+}
+.flow div>img:nth-of-type(4){
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top: 35%;
+}

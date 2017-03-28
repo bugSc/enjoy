@@ -1,0 +1,91 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-03 09:04:25
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-03 16:48:29
+*/
+/* .....................企业荣耀....................... */
+.customer_wrap{
+    width: 100%;
+    margin-top: 2%;
+    overflow: hidden;
+}
+#customer_zone{
+    width: 75%;
+    margin: 0 auto;
+}
+/* <!-- 标题 --> */
+#customer_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    word-spacing: 2em;
+}
+/* <!-- 菜单 --> */
+#customer_content{
+    width: 100%;
+    margin: 15% auto;
+}
+#customer_content li{
+    width: 12%;
+    text-align: center;
+    margin-left: 4%;
+    float: left;
+}
+#customer_content li img{
+    width: 100%;
+    height: 200px;
+
+}
+#customer_content li span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#customer_content li p{
+    font-size: 1em;
+    color: #808080;
+}
+/* <!-- 内容底部图片 --> */
+.customer_base{
+    width: 100%;
+    margin-top: -5%;
+}
+.customer_base img{
+    width: 100%;
+    height: 100%;
+}
+#count{
+    width: 100%;
+    position: absolute;
+    left: 12.5%;
+    z-index: 20;
+    text-align: center;
+    margin-top: -15%;
+    font-weight: bold;
+    color: white;
+}
+#count li{
+    float: left;
+    margin-right: 3%;
+}
+#count li p{
+    font-size: 30px;
+    margin-top: 2%;
+}
+.figure{
+    line-height: 1000%;
+}
+.figure span{
+    font-size: 50px;
+}
+@media screen and (max-width:1532px){
+    #customer_zone{
+        width: 100%;
+    }
+    #count li{
+        margin-right: 1%;
+    }
+    #count{
+        left: 2%;
+    }
+}

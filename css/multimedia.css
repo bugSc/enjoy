@@ -1,0 +1,183 @@
+/*
+* @Author: anchen
+* @Date:   2017-03-02 17:17:43
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-07 21:42:18
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    min-width: 640px;
+}
+ul{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}
+/* <!-- 页面头 -->*/
+.nav_wrap{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+/* <!-- 大图切换 --> */
+#biger_cut{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    margin: auto;
+}
+#biger_cut li{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+/* <!-- 页面顶行导航菜单 --> */
+.nav_menu{
+    width: 75%;
+    margin-left: 12.5%;
+}
+#logo{
+    float: left;
+}
+/* <!-- 跳转菜单 --> */
+#jump_menu{
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+#jump_menu li{
+    float: left;
+    margin-left: 20px;
+}
+#jump_menu li a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+#jump_menu li a:hover{
+    border-bottom: 3px solid #CFDB00;
+}
+/* 副切换菜单 */
+.nav_menu div:nth-of-type(2){
+    width: 100px;
+    display: none;
+    text-align: center;
+    float: right;
+}
+#jumpmenu li{
+    opacity: 0.8;
+    background-color: #CDDB00;
+}
+#jumpmenu li a{
+    color: white;
+    text-decoration: none;
+}
+#jumpmenu{
+    position: absolute;
+    display: none;
+}
+.underline{
+
+    border-bottom: 3px solid #CDDB00;
+}
+/* 配合事件 */
+@media screen and (max-width: 1523px){
+    #jump_menu{
+        display: none;
+    }
+    #jumpa{
+        display: block;
+    }
+    #logo img{
+        float: left;
+    }
+    .nav_menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .nav_wrap{
+        width: 100%;
+    }
+}
+
+/* .......................content..................... */
+.media{
+    width: 75%;
+    margin-left: 12.5%;
+    position: relative;
+}
+#back img{
+    width: 100%;
+}
+/* 切换 */
+.multi ul li{
+    float: left;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+.multi>ul>li span{
+    opacity: 0.5;
+}
+.multi>ul>li:hover span{
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+.multider{
+    border-bottom: 2px solid black;
+}
+/* 媒体视频 */
+.content_wrap ul{
+    width: 102%;
+}
+.content_wrap ul:not(:first-child){
+    display: none;
+}
+.content_wrap ul li{
+    width: 32%;
+    float: left;
+    margin-right:1%;
+    position: relative;
+    cursor: pointer;
+}
+.mediaimg{
+    width: 100%;
+}
+.mediabtn{
+    width: 18px;
+    height: 26px;
+    background-image: url('../image/images1/bofang_01.png');
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}
+.content_wrap>ul>li:hover .mediabtn{
+    background-image: url('../image/images1/bofang_02.png');
+}
+@media screen and (max-width: 1523px){
+    .media{
+        width: 100%;
+        margin-left: 0;
+    }
+}

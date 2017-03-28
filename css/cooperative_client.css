@@ -1,0 +1,27 @@
+/* .......................合作客户..................... */
+.honor_wrap{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    position: relative;
+}
+#honor_zone{
+    width: 75%;
+    margin: 0 auto;
+}
+/* <!-- 标题 --> */
+#honor_title{
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    word-spacing: 2em;
+}
+/* <!-- 内容底部图片 --> */
+.honor_base{
+    width: 100%;
+    margin-top: 15%;
+}
+.honor_base img{
+    width: 100%;
+    height: 100%;
+}
